@@ -63,7 +63,8 @@ defineEmits<{
 }>();
 
 const filters: FilterType[] = ['all', 'active', 'completed'];
-const categories: Category[] = ['Personal', 'Work', 'Shopping', 'Health', 'Other'];
+export type Category = "Personal" | "Work" | "Urgent" | "Other";
+
 
 const categoryColors: Record<string, string> = {
   Personal: 'bg-purple-500',
